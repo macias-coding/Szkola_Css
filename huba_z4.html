@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Huba Z4_html</title>
+</head>
+<body>
+
+<h1><u><b>Sposoby pod&#322;&#261;czania CSS do kodu strony WWW</b></u></h1>
+
+<!-- ========== METODA 1 ========== -->
+<table border="1" width="100%" cellpadding="10">
+    <tr>
+        <td>
+            <p><u><b>1) Zewn&#281;trzny arkusz styl&#243;w</b></u></p>
+            <textarea rows="4" cols="80">
+Zewnętrzny arkusz stylów polega na zapisaniu wszystkich reguł CSS w oddzielnym pliku z rozszerzeniem .css (np. style.css), a następnie podłączeniu go do strony HTML za pomocą znacznika &lt;link&gt; umieszczonego w sekcji &lt;head&gt;. Jest to najbardziej zalecana metoda, ponieważ pozwala na zarządzanie wyglądem wielu stron jednocześnie z jednego pliku.
+            </textarea>
+            <pre>
+&lt;head&gt;
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
+&lt;/head&gt;
+            </pre>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ========== METODA 2 ========== -->
+<table border="1" width="100%" cellpadding="10">
+    <tr>
+        <td>
+            <p><u><b>2) Styl lokalny (wpisany, liniowy, linijkowy, w linii) &ndash; dopisanie arkusza do wybranego bloku tre&#347;ci strony</b></u></p>
+            <textarea rows="4" cols="80">
+Styl lokalny (inline) polega na dodaniu atrybutu style="" bezpośrednio do wybranego znacznika HTML. Dzięki temu styl dotyczy wyłącznie tego jednego elementu. Metoda ta jest przydatna przy wyjątkowych, jednorazowych zmianach wyglądu, jednak utrudnia późniejsze zarządzanie kodem.
+            </textarea>
+            <pre>
+&lt;selektor style="cecha1: warto&#347;&#263;1; cecha2: warto&#347;&#263;2..."&gt;...&lt;/selektor&gt;
+
+Przyk&#322;ad:
+&lt;p style="color: red; font-size: 18px;"&gt;Tekst w kolorze czerwonym&lt;/p&gt;
+            </pre>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ========== METODA 3 ========== -->
+<table border="1" width="100%" cellpadding="10">
+    <tr>
+        <td>
+            <p><u><b>3) Wewn&#281;trzny arkusz styl&#243;w</b></u></p>
+            <textarea rows="4" cols="80">
+Wewnętrzny arkusz stylów polega na umieszczeniu reguł CSS bezpośrednio w sekcji &lt;head&gt; dokumentu HTML, wewnątrz znacznika &lt;style&gt;. Style te obowiązują tylko dla tej jednej strony. Jest to dobra metoda, gdy chcemy oddzielić CSS od treści, ale nie potrzebujemy osobnego pliku .css.
+            </textarea>
+            <pre>
+&lt;head&gt;
+  &lt;style type="text/css"&gt;
+    selektor1 { cecha: warto&#347;&#263;; cecha2: warto&#347;&#263;2... }
+    selektor2 { cecha: warto&#347;&#263;; cecha2: warto&#347;&#263;2... }
+  &lt;/style&gt;
+&lt;/head&gt;
+            </pre>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ========== METODA 4 ========== -->
+<table border="1" width="100%" cellpadding="10">
+    <tr>
+        <td>
+            <p><u><b>4) Alternatywny arkusz styl&#243;w</b></u></p>
+            <textarea rows="4" cols="80">
+Alternatywny arkusz stylów pozwala na zaoferowanie użytkownikowi kilku wersji wyglądu strony. Domyślny styl podłączany jest przez rel="Stylesheet", natomiast alternatywne arkusze przez rel="Alternate stylesheet". Użytkownik może przełączać się między nimi za pomocą przeglądarki. Każdy arkusz posiada unikalną nazwę (atrybut title).
+            </textarea>
+            <pre>
+&lt;head&gt;
+    &lt;link rel="Stylesheet"           type="text/css" href="style.css"  title="Nazwa domy&#347;lna" /&gt;
+    &lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;
+    &lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;
+&lt;/head&gt;
+            </pre>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ========== METODA 5 ========== -->
+<table border="1" width="100%" cellpadding="10">
+    <tr>
+        <td>
+            <p><u><b>5) Import arkusza styl&#243;w</b></u></p>
+            <textarea rows="4" cols="80">
+Metoda @import umożliwia dołączenie zewnętrznego arkusza stylów wewnątrz bloku &lt;style&gt; lub wewnątrz innego pliku .css. Dyrektywa @import musi znajdować się na początku bloku stylów, przed innymi regułami CSS. Pozwala to na modularyzację styli, jednak jest wolniejsza od metody z &lt;link&gt;, ponieważ pobieranie pliku CSS rozpoczyna się dopiero po załadowaniu głównego dokumentu.
+            </textarea>
+            <pre>
+&lt;style type="text/css"&gt;
+    @import url(adres_zewnetrznego_arkusza_stylow.css);
+&lt;/style&gt;
+            </pre>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+<!-- Huba Z4_html -->
