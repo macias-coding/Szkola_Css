@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>huba Z11_html</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { font-size: 24pt; }
+    p { font-size: 12pt; }
+  </style>
+</head>
+<body>
+  <h1>Rodzaje selektorów</h1>
+  
+  <ol>
+    <li><strong>Selektory proste (selektor typu)</strong>
+      <ol>
+        <li>Selektor elementu — bezpośrednie zastosowanie do znacznika, np. p, h1, div</li>
+        <li>Selektor uniwersalny (*) — ma zastosowanie do wszystkich elementów na stronie</li>
+        <li>Selektor grupy — wiele selektorów oddzielonych przecinkami, np. h1, h2, h3</li>
+      </ol>
+    </li>
+    
+    <li><strong>Selektory potomka i dziecka</strong>
+      <ol>
+        <li>Selektor potomka (ancestor descendant) — element wewnątrz innego elementu, np. div p</li>
+        <li>Selektor dziecka (direct child) — bezpośrednie dziecko, np. div > p</li>
+        <li>Selektor braci (sibling) — elementy obok siebie, np. h1 + p</li>
+      </ol>
+    </li>
+    
+    <li><strong>Selektory atrybutów</strong>
+      <ol>
+        <li>Prosty selektor atrybutu — element z danym atrybutem, np. a[href]</li>
+        <li>Selektor atrybutu o określonej wartości — np. input[type="text"]</li>
+        <li>Selektor atrybutu zawierający określony wyraz — np. a[href*="example"]</li>
+      </ol>
+    </li>
+    
+    <li><strong>Selektory specjalne</strong>
+      <ol>
+        <li>Selektor klasy — element z daną klasą, np. .className (notation: .nazwa_klasy)</li>
+        <li>Selektor ID — element z danym identyfikatorem, np. #idName (notation: #nazwa_id)</li>
+        <li>Pseudoklasy — specjalne stany elementu
+          <ol>
+            <li>:hover — gdy mysz najedzie na element</li>
+            <li>:active — element jest aktywny</li>
+            <li>:visited — odnośnik został odwiedzony</li>
+            <li>:first-child — pierwszy element potomka</li>
+          </ol>
+        </li>
+        <li>Pseudoelementy — części elementu
+          <ol>
+            <li>::first-line — pierwsza linia tekstu</li>
+            <li>::first-letter — pierwsza litera tekstu</li>
+            <li>::before — przed zawartością elementu</li>
+            <li>::after — po zawartości elementu</li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+  
+  <!-- huba Z 11_html 10.05.2026 -->
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title>huba Z9_html</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 16pt; }
+    p { font-size: 12pt; }
+    .answer { margin-left: 20px; }
+    code { background-color: #f0f0f0; padding: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Styl zewnętrzny</h1>
+  
+  <h2>1. Składnia teoretyczna stylu zewnętrznego</h2>
+  <p class="answer">Zewnętrzny arkusz stylów zawiera same reguły CSS:</p>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>selektor1 { cecha: wartość; }<br>
+selektor2 { cecha: wartość; }<br>
+selektor3 { cecha: wartość; cecha2: wartość2; }</code></td>
+    </tr>
+  </table>
+  
+  <h2>2. Gdzie wstawiany jest styl zewnętrzny?</h2>
+  <p class="answer">Styl zewnętrzny jest podłączany za pomocą znacznika &lt;link&gt; umieszczonego w sekcji &lt;head&gt; dokumentu HTML. Znacznik &lt;link&gt; odpowiada za powiązanie pliku CSS. W jednym dokumencie HTML &lt;link&gt; może występować wielokrotnie, pozwalając na dołączenie wielu arkuszy stylów. Podłączenie odbywa się poprzez określenie ścieżki do pliku CSS w atrybucie href.</p>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;link href="style.css" rel="stylesheet" type="text/css"&gt;<br>
+&lt;/head&gt;</code></td>
+    </tr>
+  </table>
+  
+  <h2>3. Najprostsza forma wstawiania stylu zewnętrznego</h2>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>&lt;link href="nazwa_pliku.css" rel="stylesheet" type="text/css"&gt;</code></td>
+    </tr>
+  </table>
+  
+  <h2>4. Ile arkuszy styli może być dołączanych do jednego dokumentu HTML?</h2>
+  <p class="answer">Do jednego dokumentu HTML można dołączyć wiele arkuszy styli (teoretycznie nieskończoną liczbę). Zasadą, którą należy zachować przy większej ilości dołączanych styli, jest zasada kaskadowości — style dołączone później (niżej w kodzie) mogą nadpisywać style dołączone wcześniej (wyżej w kodzie). Style o wyższym priorytecie ważności mają pierwszeństwo.</p>
+  
+  <h2>5. Co się dzieje w przypadku konfliktów?</h2>
+  <p class="answer">W przypadku konfliktów, gdy te same style są definiowane w różnych arkuszach stylów podłączonych do tego samego dokumentu, stosowana jest zasada kaskadowości. Style dołączone później (ostatnie w kodzie) mają wyższy priorytet i nadpisują poprzednie definicje. Jeśli chcemy wymusić priorytet danego stylu, możemy użyć deklaracji !important.</p>
+  
+  <h2>6. Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h2>
+  <p class="answer">Pliki arkuszy CSS są tworzone i edytowane w zwykłych edytorach tekstowych (Notepad, Notepad++, VS Code). Zawsze muszą mieć rozszerzenie .css. Edytor tekstowy pozwala na pełną kontrolę nad kodem i jest uniwersalnym narzędziem dla każdego programisty.</p>
+  
+  <h2>7. Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h2>
+  <p class="answer">Specjalne edytory CSS (TopStyle, BalthisarCascade, Cascade DTP) oferują graficzny interfejs i wskaźniki błędów. Pozwalają na szybsze pisanie kodu dzięki autocompleteniu i podpowiedziom. Niektóre edytory oferują podgląd na żywo zmian w stylu.</p>
+  
+  <h2>8. Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?</h2>
+  <p class="answer">Plik będący zewnętrznym arkuszem styli ma rozszerzenie <strong>.css</strong> (Cascading Style Sheet). Przykład: style.css, layout.css, huba_z6.css</p>
+  
+  <h2>9. Jakie są zalety zewnętrznego arkusza styli?</h2>
+  <ul>
+    <li><strong>Separacja zawartości od prezentacji:</strong> Struktura HTML jest oddzielona od stylów CSS, co czyni kod bardziej przejrzystym i łatwym do utrzymania.</li>
+    <li><strong>Możliwość wielokrotnego użytku:</strong> Jeden arkusz CSS można podłączyć do wielu dokumentów HTML, co pozwala na spójny wygląd całej witryny i łatwiejsze wprowadzanie zmian globalnych.</li>
+  </ul>
+  
+  <h2>10. Uwagi na temat pisania w CSS</h2>
+  <ul>
+    <li>CSS dopuszcza zarówno duże, jak i małe litery</li>
+    <li>Białe znaki (spacje, tabulacje, znaki nowej linii) nie wpływają na działanie</li>
+    <li>Komentarze w CSS: /* komentarz */</li>
+    <li>Średnik (;) oddziela deklaracje i jest obowiązkowy między każdą parą cecha:wartość</li>
+    <li>Zawsze sprawdzaj efekty w kilku przeglądarkach, ponieważ różne przeglądarki mogą obsługiwać CSS odmiennie</li>
+  </ul>
+  
+  <!-- huba Z 9_html 10.05.2026 -->
+</body>
+</html>

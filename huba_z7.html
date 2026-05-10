@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>huba Z7_html</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { font-size: 24pt; }
+    p { font-size: 12pt; }
+    .question { font-weight: bold; }
+    .answer { margin-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Styl lokalny (liniowy, linijkowy, w linii)</h1>
+  
+  <h2>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego?</h2>
+  <p class="answer">Styl lokalny (inline style) pozwala na zastosowanie formatowania bezpośrednio do wybranego elementu HTML. Element będący celem stylu lokalnego to każdy znacznik, do którego można dodać atrybut style="", np. &lt;p&gt;, &lt;span&gt;, &lt;div&gt;, &lt;h1&gt; itp. Styl ten dotyczy wyłącznie tego konkretnego elementu.</p>
+  
+  <h2>2. Składnia teoretyczna</h2>
+  <p class="answer">Składnia stylu lokalnego:</p>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>&lt;znacznik style="cecha1: wartość1; cecha2: wartość2; ..."&gt; treść &lt;/znacznik&gt;</code></td>
+    </tr>
+  </table>
+  <p class="answer">Przykład:</p>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>&lt;p style="color: red; font-size: 18px;"&gt;Tekst w kolorze czerwonym&lt;/p&gt;</code></td>
+    </tr>
+  </table>
+  
+  <h2>3. Co może być selektorem?</h2>
+  <p class="answer">Selektorem w stylu lokalnym jest sam znacznik HTML, do którego bezpośrednio dołączamy atrybut style="". Selektor to element, który chcemy sformatować, np. &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;h1&gt;, &lt;a&gt;, &lt;button&gt; itp. W technice stylu lokalnego nie ma oddzielnych selektorów — cały selektor jest znacznikiem.</p>
+  
+  <h2>4. Co wpisujemy jako "cechę". Jakie jest znaczenie średników?</h2>
+  <p class="answer">Cechę (właściwość CSS) to atrybuty formatowania, takie jak:</p>
+  <ul>
+    <li>color — kolor tekstu</li>
+    <li>font-size — rozmiar czcionki</li>
+    <li>background-color — kolor tła</li>
+    <li>font-family — rodzina czcionki</li>
+    <li>text-align — wyrównanie tekstu</li>
+  </ul>
+  <p class="answer">Średnik (;) oddziela poszczególne cechy od siebie. Jest to separator, który oznacza koniec jednej właściwości i początek następnej. Średnik jest obowiązkowy pomiędzy każdą parą cecha:wartość.</p>
+  
+  <h2>5. Co wpisujemy jako "wartość" (w deklaracji stylu)?</h2>
+  <p class="answer">Wartość to konkretne ustawienie danej cechy, np:</p>
+  <ul>
+    <li>Dla <code>color</code>: red, blue, #FF0000, rgb(255,0,0)</li>
+    <li>Dla <code>font-size</code>: 12px, 1.5em, 20pt, large</li>
+    <li>Dla <code>background-color</code>: white, #FFFFFF, rgb(255,255,255)</li>
+    <li>Dla <code>text-align</code>: left, right, center, justify</li>
+  </ul>
+  
+  <!-- huba Z 7_html 10.05.2026 -->
+</body>
+</html>

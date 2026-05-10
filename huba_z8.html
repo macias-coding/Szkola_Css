@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>huba Z8_html</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 16pt; }
+    p { font-size: 12pt; }
+    .answer { margin-left: 20px; }
+    code { background-color: #f0f0f0; padding: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Wewnętrzny arkusz stylów</h1>
+  
+  <h2>1. Gdzie jest wstawiany wewnętrzny arkusz stylów?</h2>
+  <p class="answer">Wewnętrzny arkusz stylów jest wstawiany wewnątrz sekcji &lt;head&gt; dokumentu HTML. Znajduje się między znacznikami &lt;style&gt; i &lt;/style&gt;. Umieszczenie go w &lt;head&gt; gwarantuje, że style będą załadowane zanim przeglądarką rozpocznie wyświetlanie zawartości strony.</p>
+  
+  <h2>2. Składnia teoretyczna</h2>
+  <p class="answer">Struktura wewnętrznego arkusza stylów:</p>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;style type="text/css"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;selektor1 { cecha: wartość; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;selektor2 { cecha: wartość; }<br>
+&nbsp;&nbsp;&lt;/style&gt;<br>
+&lt;/head&gt;</code></td>
+    </tr>
+  </table>
+  
+  <h2>3. Jakie mogą być selektory?</h2>
+  <p class="answer">Selektory w wewnętrznym arkuszu stylów mogą być:</p>
+  <ul>
+    <li><strong>Selektory elementów:</strong> p, h1, div, span, body, a</li>
+    <li><strong>Selektory klas:</strong> .className</li>
+    <li><strong>Selektory identyfikatorów:</strong> #idName</li>
+    <li><strong>Selektory uniwersalne:</strong> *</li>
+    <li><strong>Selektory potomka:</strong> div p (paragraf wewnątrz div)</li>
+    <li><strong>Selektory pseudo-klas:</strong> a:hover, p:first-child</li>
+  </ul>
+  
+  <h2>4. Jakie mogą być cechy i wartości?</h2>
+  <p class="answer">Cechy i wartości to podstawowe elementy deklaracji CSS:</p>
+  <ul>
+    <li><strong>Cechy:</strong> color, font-size, background-color, font-family, text-align, margin, padding, border, width, height itp.</li>
+    <li><strong>Wartości:</strong> red, blue, #FF0000, 12px, 1.5em, Arial, center, left, right, 10px 20px itp.</li>
+  </ul>
+  <p class="answer">Przykłady:</p>
+  <table border="1" cellpadding="10">
+    <tr>
+      <td><code>p { color: red; font-size: 14px; font-family: Arial; }</code></td>
+    </tr>
+  </table>
+  
+  <!-- huba Z 8_html 10.05.2026 -->
+</body>
+</html>

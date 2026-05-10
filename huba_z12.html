@@ -1,0 +1,139 @@
+<html>
+<head>
+  <title>huba Z12_html</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { font-size: 24pt; text-align: center; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 2px solid #000; padding: 10px; text-align: left; }
+    th { background-color: #C0C0C0; font-weight: bold; }
+    tr:nth-child(even) { background-color: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h1>Jednostki miar stosowane w CSS</h1>
+  
+  <h2>Jednostki bezwzględne (absolutne)</h2>
+  <table>
+    <tr>
+      <th>Jednostka</th>
+      <th>Nazwa</th>
+      <th>Opis</th>
+      <th>Zastosowanie</th>
+    </tr>
+    <tr>
+      <td><strong>px</strong></td>
+      <td>Pixel</td>
+      <td>1 piksel = 1/96 cala. Jednostka względna do urządzenia wyświetlającego</td>
+      <td>Rozmiary czcionek, szerokości elementów, marginy</td>
+    </tr>
+    <tr>
+      <td><strong>pt</strong></td>
+      <td>Punkt</td>
+      <td>1 punkt = 1/72 cala. Tradycyjna jednostka typografii</td>
+      <td>Rozmiary czcionek w druku</td>
+    </tr>
+    <tr>
+      <td><strong>mm</strong></td>
+      <td>Milimetr</td>
+      <td>1 milimetr = dokładnie 1 mm</td>
+      <td>Precyzyjne wymiary, projekty do druku</td>
+    </tr>
+    <tr>
+      <td><strong>cm</strong></td>
+      <td>Centymetr</td>
+      <td>1 centymetr = 10 milimetrów</td>
+      <td>Większe rozmiary, dokumenty</td>
+    </tr>
+    <tr>
+      <td><strong>in</strong></td>
+      <td>Cal (inch)</td>
+      <td>1 cal = 2.54 centymetra = 96 pixeli</td>
+      <td>Wymiary w standardzie amerykańskim</td>
+    </tr>
+    <tr>
+      <td><strong>pc</strong></td>
+      <td>Pika</td>
+      <td>1 pika = 12 punktów = 1/6 cala</td>
+      <td>Typografia, mniej popularna</td>
+    </tr>
+    <tr>
+      <td><strong>Q</strong></td>
+      <td>Ćwierć milimetra</td>
+      <td>1Q = 1/40 centymetra (nowa jednostka CSS3)</td>
+      <td>CSS3, precyzyjne wymiary</td>
+    </tr>
+  </table>
+  
+  <h2>Jednostki względne (elastyczne)</h2>
+  <table>
+    <tr>
+      <th>Jednostka</th>
+      <th>Nazwa</th>
+      <th>Opis</th>
+      <th>Zastosowanie</th>
+    </tr>
+    <tr>
+      <td><strong>em</strong></td>
+      <td>Em</td>
+      <td>Względne do rozmiaru czcionki bieżącego elementu lub jego rodzica. 1em = wielkość czcionki rodzica</td>
+      <td>Proporcjonalne skalowanie w ramach elementu</td>
+    </tr>
+    <tr>
+      <td><strong>rem</strong></td>
+      <td>Root em</td>
+      <td>Względne do rozmiaru czcionki elementu głównego (&lt;html&gt;). Zapewnia spójne skalowanie całej strony</td>
+      <td>Konsistentne wymiary na całej stronie</td>
+    </tr>
+    <tr>
+      <td><strong>ex</strong></td>
+      <td>Ex</td>
+      <td>Względne do wysokości małej litery 'x' w bieżącej czcionce</td>
+      <td>Rzadko stosowana, szczególne przypadki</td>
+    </tr>
+    <tr>
+      <td><strong>ch</strong></td>
+      <td>Character width</td>
+      <td>Względne do szerokości cyfry '0' w bieżącej czcionce</td>
+      <td>Tekst monospaced, wyrównanie tekstu</td>
+    </tr>
+    <tr>
+      <td><strong>vw</strong></td>
+      <td>Viewport Width</td>
+      <td>1% szerokości okna przeglądarki</td>
+      <td>Pełnoekranowe sekcje, responsywne projekty</td>
+    </tr>
+    <tr>
+      <td><strong>vh</strong></td>
+      <td>Viewport Height</td>
+      <td>1% wysokości okna przeglądarki. Idealne do elementów zajmujących całą wysokość ekranu</td>
+      <td>Elementy na pełną wysokość, layouty</td>
+    </tr>
+    <tr>
+      <td><strong>vmin</strong></td>
+      <td>Viewport Min</td>
+      <td>1% mniejszego wymiaru (szerokości lub wysokości) okna przeglądarki</td>
+      <td>Responsywne projekty dla wielu urządzeń</td>
+    </tr>
+    <tr>
+      <td><strong>vmax</strong></td>
+      <td>Viewport Max</td>
+      <td>1% większego wymiaru (szerokości lub wysokości) okna przeglądarki</td>
+      <td>Elementy skalujące się wraz z ekranem</td>
+    </tr>
+    <tr>
+      <td><strong>%</strong></td>
+      <td>Procent</td>
+      <td>Względne do rozmiaru elementu nadrzędnego (kontenera)</td>
+      <td>Szerokości elementów, elastyczne layouty</td>
+    </tr>
+  </table>
+  
+  <h2>Porównanie i zastosowanie</h2>
+  <p><strong>Jednostki bezwzględne:</strong> Stałe, niezależne od innych parametrów. Przydatne gdy chcemy precyzyjne wymiary, ale mniej elastyczne w responsywnych projektach.</p>
+  <p><strong>Jednostki względne:</strong> Elastyczne, dostosowują się do kontekstu. Idealnie do projektów responsywnych, skalowania treści i dostępności.</p>
+  
+  <!-- huba Z 12_html 10.05.2026 -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>huba Z10_html</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 16pt; }
+    p { font-size: 12pt; }
+    .answer { margin-left: 20px; }
+    code { background-color: #f0f0f0; padding: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Budowa selektora</h1>
+  
+  <h2>1. Dwie części selektora</h2>
+  <p class="answer"><strong>Każda reguła CSS składa się z dwóch części:</strong></p>
+  <ul>
+    <li><strong>Selektor:</strong> określa do jakich elementów (znaczników) ma zostać przypisane formatowanie. Przykłady: p, h1, div, .klasa, #id</li>
+    <li><strong>Deklaracja:</strong> umieszczona w nawiasie klamrowym {...} podaje formatowanie, czyli jakie cechy (właściwości) i ich wartości mają być zastosowane</li>
+  </ul>
+  
+  <h2>2. Znaczenie nawiasów klamrowych {...}</h2>
+  <p class="answer">Nawiasy klamrowe {...} zawierają <strong>deklarację</strong>, czyli wszystkie reguły formatowania dla danego selektora. Wszystkie cechy i wartości muszą być umieszczone między tymi nawiasami. Nawias otwierający { oznacza początek deklaracji, a zamykający } oznacza jej koniec.</p>
+  <table border="1" cellpadding="10" style="margin: 10px 0;">
+    <tr>
+      <td><code>p { color: red; font-size: 14pt; }</code></td>
+    </tr>
+  </table>
+  
+  <h2>3. Cechy (właściwości)</h2>
+  <p class="answer">Cecha (ang. property) to konkretny atrybut formatowania, który chcemy zmienić. Przykłady cech:</p>
+  <ul>
+    <li><strong>color</strong> — kolor tekstu</li>
+    <li><strong>font-size</strong> — rozmiar czcionki</li>
+    <li><strong>background-color</strong> — kolor tła</li>
+    <li><strong>font-family</strong> — rodzina czcionki</li>
+    <li><strong>text-align</strong> — wyrównanie tekstu</li>
+    <li><strong>margin</strong> — margines zewnętrzny</li>
+    <li><strong>padding</strong> — margines wewnętrzny</li>
+    <li><strong>border</strong> — obramowanie</li>
+  </ul>
+  
+  <h2>4. Wartości (właściwości)</h2>
+  <p class="answer">Wartość (ang. value) to konkretne ustawienie danej cechy. Każda cecha ma ściśle wyszczególnioną listę wartości, które może przyjąć. Przykłady:</p>
+  <ul>
+    <li>Dla <code>color</code>: red, blue, #FF0000, rgb(255,0,0)</li>
+    <li>Dla <code>font-size</code>: 12px, 1.5em, 20pt, large</li>
+    <li>Dla <code>text-align</code>: left, right, center, justify</li>
+    <li>Dla <code>background-color</code>: white, #FFFFFF, rgb(255,255,255), yellow</li>
+  </ul>
+  
+  <h2>5. Znaczenie średnika — kiedy jest obowiązkowy?</h2>
+  <p class="answer">Średnik (;) oddziela poszczególne deklaracje cecha:wartość w obrębie jednej reguły. <strong>Średnik jest obowiązkowy między każdą parą cecha:wartość, gdy jest więcej niż jedna</strong>. Na końcu ostatniej cechy średnik nie jest konieczny, ale jest dobrą praktyką go umieszczać.</p>
+  <table border="1" cellpadding="10" style="margin: 10px 0;">
+    <tr>
+      <td><code>p { color: red; font-size: 14pt; text-align: center; }</code></td>
+    </tr>
+  </table>
+  <p class="answer">W powyższym przykładzie średniki oddzielają trzy cechy. Ostatni średnik po text-align: center nie jest obowiązkowy, ale zaleca się go umieszczać dla konsystencji.</p>
+  
+  <!-- huba Z 10_html 10.05.2026 -->
+</body>
+</html>
